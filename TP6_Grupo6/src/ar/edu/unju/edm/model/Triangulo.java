@@ -40,9 +40,11 @@ public class Triangulo {
 		this.ladoC = ladoC;
 	}
 	
-	public boolean determinarTriangulo() {
+	public boolean verificarTriangulo() {
 		int aux1=getLadoA()+getLadoC();
-		if(aux1>getLadoC()) {
+		int aux2=getLadoC()+getLadoB();
+		int aux3=getLadoA()+getLadoB();
+		if((aux1>getLadoB())&&(aux2>getLadoA())&&(aux3>getLadoC())) {
 			return true;
 		}
 		return false;
