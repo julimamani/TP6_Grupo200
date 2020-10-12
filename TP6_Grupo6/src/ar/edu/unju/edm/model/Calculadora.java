@@ -24,4 +24,29 @@ public class Calculadora {
 		this.numero2 = numero2;
 	}
 	
+	public double sumarNum() {
+		return (getNumero1()+getNumero2());
+	}
+	
+	public double restarNum() {
+		return (getNumero1()-getNumero2());
+	}
+	
+	public double multiplicarNum() {
+		return (getNumero1()*getNumero2());
+	}
+	
+	public double dividirNum() {
+		return (getNumero1()/getNumero2());
+	}
+	
+	public int obtenerMaximoValor(int[]numeros) {
+		int aux=0;
+		for(int i=0;i<5;i++) {
+			if(aux<numeros[i]) {
+				aux=numeros[i];
+			}
+		}
+		return aux;
+	}
 }

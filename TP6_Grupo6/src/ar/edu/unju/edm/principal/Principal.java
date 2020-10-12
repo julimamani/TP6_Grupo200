@@ -10,6 +10,7 @@ public class Principal {
 		// TODO Auto-generated method stub
 		Triangulo triangulo= new Triangulo();
 		Scanner ing = new Scanner(System.in);
+		System.out.println("----------------BIENVENIDO----------------");
 		System.out.println("Ingrese 3 lados");
 		System.out.println("Lado A: ");
 		triangulo.setLadoA(ing.nextInt());
@@ -24,9 +25,11 @@ public class Principal {
 				if(triangulo.verificarEscaleno()!=false) {
 					System.out.println("El triangulo es del tipo Escaleno");
 				}else {
-					System.out.println("El triangulo es del tipo Isosceles ");
+					System.out.println("El triangulo es del tipo Isosceles");
 				}
 			}
+		}else {
+			System.out.println("Con las medidas ingresadas no es posible construir un triangulo");
 		}
 		
 		ing.close();

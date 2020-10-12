@@ -6,7 +6,7 @@ import ar.edu.unju.edm.model.Triangulo;
 import junit.framework.TestCase;
 
 public class TrianguloTest extends TestCase{
-
+//testVerificarTriangulo()
 	@Test
 	public void testVerificarTriangulo1() {
 		Triangulo triangulo=new Triangulo(10,7,3);
@@ -36,4 +36,29 @@ public class TrianguloTest extends TestCase{
 		Triangulo triangulo=new Triangulo(30,5,6);
 		assertEquals(true,triangulo.verificarTriangulo());
 	}
+//testVerificarIsosceles()
+	@Test
+	public void testVerificarIsosceles1() {
+		Triangulo triangulo=new Triangulo(9,6,4);
+		assertEquals(true,triangulo.verificarTriangulo());
+	}
+	
+	@Test
+	public void testVerificarIsosceles2() {
+		Triangulo triangulo=new Triangulo(14,24,5);
+		assertEquals(true,triangulo.verificarTriangulo());
+	}
+	
+	@Test
+	public void testVerificarIsosceles3() {
+		Triangulo triangulo=new Triangulo(9,6,9);
+		assertEquals(true,triangulo.verificarTriangulo());
+	}
+	
+	@Test
+	public void testVerificarIsosceles5() {
+		Triangulo triangulo=new Triangulo(14,14,14);
+		assertEquals(true,triangulo.verificarTriangulo());
+	}
+	
 }
