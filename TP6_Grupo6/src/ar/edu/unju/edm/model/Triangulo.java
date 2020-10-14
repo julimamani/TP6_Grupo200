@@ -50,16 +50,8 @@ public class Triangulo {
 		return false;
 	}
 	public boolean verificarIsosceles() {
-		if((getLadoA()==getLadoB())&&(getLadoA()!=getLadoC())){
+		if((getLadoA()==getLadoB()) || (getLadoA()==getLadoC()) || (getLadoB()==getLadoC())){
 			return true;
-		}else {
-			if((getLadoC()==getLadoB())&&(getLadoA()!=getLadoC())){
-				return true;
-			}else {
-				if((getLadoA()==getLadoC())&&(getLadoA()!=getLadoB())){
-					return true;
-				}
-			}
 		}
 		return false;
 	}

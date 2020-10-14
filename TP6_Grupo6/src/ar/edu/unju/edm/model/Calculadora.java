@@ -37,12 +37,12 @@ public class Calculadora {
 	}
 	
 	public double dividirNum() {
-		return (getNumero1()/getNumero2());
+		return (getNumero1()/(double)getNumero2());
 	}
 	
-	public int obtenerMaximoValor(int[]numeros) {
-		int aux=0;
-		for(int i=0;i<5;i++) {
+	public int obtenerMaximoValor(int[] numeros) {
+		int aux= numeros[0];
+		for(int i=1;i<numeros.length;i++) {
 			if(aux<numeros[i]) {
 				aux=numeros[i];
 			}
