@@ -24,12 +24,19 @@ public class TrianguloTest extends TestCase{
 		Triangulo triangulo=new Triangulo(9,6,4);
 		assertEquals(true,triangulo.verificarTriangulo());
 	}
-	
+
 	@Test
 	public void testVerificarTriangulo4() {
 		Triangulo triangulo=new Triangulo(14,14,6);
 		assertEquals(true,triangulo.verificarTriangulo());
 	}
+
+	/*
+	 * 30 5 6 true -> datos que se encuentran en la tabla del Trabajo Practico
+	 * pero al desarrollar el test nos dio un error y verificando a mano, encontramos que 
+	 * con esas medidas (30 5 6), debemos esperar un resultado falso.
+	 * 
+	 */
 
 	@Test
 	public void testVerificarTriangulo5() {
@@ -88,8 +95,7 @@ public class TrianguloTest extends TestCase{
 		
 		}
 		
-		
-		
+				
 		//testVerificarEscaleno()
 			@Test
 			public void testVerificarEscaleno1() {

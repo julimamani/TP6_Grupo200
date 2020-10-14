@@ -100,7 +100,11 @@ public class CalculadoraTest extends TestCase {
 		Calculadora calculadora = new Calculadora();
 		assertEquals(9,calculadora.obtenerMaximoValor(numeros));
 	}
-	
+
+/*
+ * {8,10,4,14,5} 10 -> son valores de la tabla para esta prueba, sin embargo, el maximo 
+ * valor es 14, por ello como resutlado esperado pusimo 14 y no 10.
+ */
 	@Test
 	public void testObtenerMaximoValor3() {
 		int[] numeros= {8,10,4,14,5};
